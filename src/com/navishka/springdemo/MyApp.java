@@ -3,7 +3,7 @@ package com.navishka.springdemo;
 public class MyApp {
 
 	public static void main(String[] args) {
-		BaseballCoach theCoach = new BaseballCoach();
+		Coach theCoach = new BaseballCoach();
 		
 		System.out.println(theCoach.getDailyWorkout());
 
