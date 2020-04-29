@@ -2,6 +2,12 @@ package com.navishka.springdemo;
 
 public class BaseballCoach implements Coach{
 	
+	private FortuneService fortuneService;
+	
+	public BaseballCoach(FortuneService theFortuneService) {
+		fortuneService = theFortuneService;
+	}
+	
 	@Override
 	public String getDailyWorkout() {
 		return "Bat for 30 minutes";
@@ -9,8 +15,7 @@ public class BaseballCoach implements Coach{
 
 	@Override
 	public String getDailyFortune() {
-		// TODO Auto-generated method stub
-		return null;
+		return fortuneService.getFortune();
 	}
 
 }
