@@ -10,7 +10,7 @@
     <!-- Define your beans here -->
     <bean id="myFortuneService" class="com.navishka.springdemo.HappyFortuneService"></bean>
     
-    <bean id="myCoach" class="com.navishka.springdemo.BaseballCoach">
+    <bean id="myCoach" class="com.navishka.springdemo.TrackCoach">
     	<constructor-arg ref="myFortuneService"/>
     </bean>
     
