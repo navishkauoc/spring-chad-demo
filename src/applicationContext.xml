@@ -14,5 +14,8 @@
     	<constructor-arg ref="myFortuneService"/>
     </bean>
     
+    <bean id="myCricketCoach" class="com.navishka.springdemo.CricketCoach">
+    	<property name="fortuneService" ref="myFortuneService" />
+    </bean>
     
 </beans>
