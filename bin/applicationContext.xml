@@ -16,6 +16,9 @@
     
     <bean id="myCricketCoach" class="com.navishka.springdemo.CricketCoach">
     	<property name="fortuneService" ref="myFortuneService" />
+    	
+    	<property name="emailAddress" value="navishka@gmail.com" />
+    	<property name="team" value="Team Immortals" />
     </bean>
     
 </beans>
